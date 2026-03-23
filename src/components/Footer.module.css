@@ -1,0 +1,30 @@
+.footer {
+  padding: 36px 60px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: var(--muted);
+}
+
+.copy {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 28px 24px;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
