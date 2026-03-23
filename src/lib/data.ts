@@ -17,7 +17,7 @@ export const siteConfig = {
 }
 
 export const stats = [
-  { value: '4+', label: 'Years Experience' },
+  { value: '5+', label: 'Years Experience' },
   { value: '90%', label: 'Automation Coverage' },
   { value: '3', label: 'AI Agents Shipped' },
   { value: '80+', label: 'Mobile Tests' },
