@@ -1,9 +1,37 @@
 'use client'
 
+import { useState } from 'react'
 import { siteConfig } from '@/lib/data'
 import styles from './Contact.module.css'
 
 export default function Contact() {
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    setStatus('sending')
+
+    const form = e.currentTarget
+    const data = new FormData(form)
+
+    try {
+      const res = await fetch('https://formspree.io/f/mkoqlqdr', {
+        method: 'POST',
+        body: data,
+        headers: { Accept: 'application/json' },
+      })
+
+      if (res.ok) {
+        setStatus('success')
+        form.reset()
+      } else {
+        setStatus('error')
+      }
+    } catch {
+      setStatus('error')
+    }
+  }
+
   return (
     <section id='contact' className={styles.section}>
       <div className={styles.sectionLabel}>Get In Touch</div>
@@ -31,22 +59,28 @@ export default function Contact() {
           </div>
         </div>
 
-        <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
+        <form className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.field}>
             <label className={styles.label}>Name</label>
-            <input className={styles.input} type='text' placeholder='Your name' />
+            <input className={styles.input} type='text' name='name' placeholder='Your name' required />
           </div>
           <div className={styles.field}>
             <label className={styles.label}>Email</label>
-            <input className={styles.input} type='email' placeholder='your@email.com' />
+            <input className={styles.input} type='email' name='email' placeholder='your@email.com' required />
           </div>
           <div className={styles.field}>
             <label className={styles.label}>Message</label>
-            <textarea className={styles.textarea} placeholder='Tell me about the role or project...' />
+            <textarea className={styles.textarea} name='message' placeholder='Tell me about the role or project...' required />
           </div>
-          <button type='submit' className={styles.submit}>
-            Send Message
+          <button type='submit' className={styles.submit} disabled={status === 'sending'}>
+            {status === 'sending' ? 'Sending...' : 'Send Message'}
           </button>
+          {status === 'success' && (
+            <p className={styles.successMsg}>Message sent! I'll get back to you soon.</p>
+          )}
+          {status === 'error' && (
+            <p className={styles.errorMsg}>Something went wrong. Please try again.</p>
+          )}
         </form>
       </div>
     </section>
