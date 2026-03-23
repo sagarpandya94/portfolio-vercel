@@ -4,11 +4,11 @@ export const siteConfig = {
   role: 'Software Quality Engineer',
   tagline: 'SDET · AI Engineer · Quality Architect',
   description:
-    'Quality engineering for SaaS products where system reliability, data integrity, and compliance carry real weight. 6+ years building AI-integrated test systems across data, identity, and health domains — from pipeline validation to LLM quality to mobile automation.',
+    'Quality engineering for SaaS products where system reliability, data integrity, and compliance carry real weight. 4+ years building AI-integrated test systems across data, identity, and health domains — from pipeline validation to LLM quality to mobile automation.',
   contact: {
     email: 'sagarpandya94@gmail.com',
     github: 'https://github.com/sagarpandya94',
-    linkedin: 'https://linkedin.com/in/sagarpandya',
+    linkedin: 'https://linkedin.com/in/sagarpandya94',
     githubHandle: 'github.com/sagarpandya94',
     linkedinHandle: 'linkedin.com/in/sagarpandya94',
   },
@@ -17,7 +17,7 @@ export const siteConfig = {
 }
 
 export const stats = [
-  { value: '5+', label: 'Years Experience' },
+  { value: '4+', label: 'Years Experience' },
   { value: '90%', label: 'Automation Coverage' },
   { value: '3', label: 'AI Agents Shipped' },
   { value: '80+', label: 'Mobile Tests' },
