@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Sagar Pandya — Software Quality Engineer',
   description:
     'Quality engineering for SaaS products where system reliability, data integrity, and compliance carry real weight.',
+  icons: {
+    icon: '/favicon.ico',
+  },
   openGraph: {
     title: 'Sagar Pandya — Software Quality Engineer',
     description:
