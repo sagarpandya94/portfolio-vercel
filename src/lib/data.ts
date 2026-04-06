@@ -2,7 +2,7 @@ export const siteConfig = {
   name: 'Sagar Pandya',
   initials: 'SP',
   role: 'Software Quality Engineer',
-  tagline: 'SDET · AI Enabled Engineer · Quality Architect',
+  tagline: 'SDET who builds AI agents, not just tests them.',
   description:
     'Quality engineering for SaaS products where system reliability, data integrity, and compliance carry real weight. 4+ years building AI-integrated test systems across data, identity, and health domains — from pipeline validation to LLM quality to mobile automation.',
   contact: {
@@ -19,7 +19,7 @@ export const siteConfig = {
 export const stats = [
   { value: '4+', label: 'Years Experience' },
   { value: '90%', label: 'Automation Coverage' },
-  { value: '3', label: 'AI Agents Shipped' },
+  { value: '4', label: 'AI Agents Shipped' },
   { value: '80+', label: 'Mobile Tests' },
 ]
 
@@ -55,6 +55,17 @@ export const projects = [
       'Multi-agent health data validation system built on the Oura wearable API. Validates sleep, HRV, and activity telemetry using Claude & Gemini strategy pattern. HealthAgent, ToolCallingAgent, and MemoryAgent with full CI/CD.',
     stack: ['Python', 'Claude API', 'PyTest', 'Appium', 'React Native'],
     href: 'https://github.com/sagarpandya94/oura-ai-agent',
+    active: true,
+  },
+  {
+    tag: 'Security · AI',
+    tagVariant: 'teal' as const,
+    industry: 'NHI Security',
+    title: 'AGENT-PAM',
+    description:
+      'PAM (Privileged Access Management) for AI agents — a proof-of-concept governance layer for Claude agents accessing privileged infrastructure. JIT credential checkout, policy enforcement, prompt injection detection, full audit trail with session replay, and a React dashboard for vault admin and agent dispatch.',
+    stack: ['Python', 'FastAPI', 'Claude API', 'React', 'Tailwind', 'Docker', 'SQLite'],
+    href: 'https://github.com/sagarpandya94/agent-pam',
     active: true,
   },
   {
@@ -151,6 +162,7 @@ export const skillGroups = [
       { name: 'GitHub', level: 90 },
       { name: 'Perforce', level: 75 },
       { name: 'Confluence', level: 80 },
+      { name: 'FastAPI', level: 75 },
     ],
   },
   {
