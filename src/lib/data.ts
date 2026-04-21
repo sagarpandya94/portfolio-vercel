@@ -17,7 +17,7 @@ export const siteConfig = {
 }
 
 export const stats = [
-  { value: '4+', label: 'Years Experience' },
+  { value: '5', label: 'Years Experience' },
   { value: '90%', label: 'Automation Coverage' },
   { value: '4', label: 'AI Agents Shipped' },
   { value: '80+', label: 'Mobile Tests' },
@@ -181,7 +181,7 @@ export const skillGroups = [
 export const experience = [
   {
     company: 'Saviynt',
-    period: '2023 — Present',
+    period: 'Jul 2024 — Present',
     industryTag: 'Identity Security',
     role: 'Software Quality Engineer 3',
     description:
@@ -189,7 +189,7 @@ export const experience = [
   },
   {
     company: 'Scale AI',
-    period: '2022 — 2023',
+    period: 'Mar 2024 — May 2024',
     industryTag: 'AI / Data Quality',
     role: 'LLM Quality Validator',
     description:
@@ -197,7 +197,7 @@ export const experience = [
   },
   {
     company: 'Informatica',
-    period: 'Earlier',
+    period: 'Apr 2021 - Dec 2023',
     industryTag: 'Data Integration',
     role: 'SDET',
     description:
