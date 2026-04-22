@@ -47,6 +47,17 @@ export const philosophyBlocks = [
 
 export const projects = [
   {
+    tag: 'Biotech · AI · Compliance',
+    tagVariant: 'teal' as const,
+    industry: 'Medical Device Software (SaMD)',
+    title: 'SAMD-SENTINEL',
+    description:
+      'AI-powered IEC 62304 SOUP risk assessment CLI for medical device software. Scans Python dependencies against the NVD for CVEs, classifies risk using product-specific context, and uses Claude to generate audit-ready regulatory narratives — functional requirements, hazard analysis, and anomaly impact assessments mapped to IEC 62304 clauses.',
+    stack: ['Python', 'Claude API', 'NVD API', 'PyTest', 'Click', 'Pydantic'],
+    href: 'https://github.com/sagarpandya94/samd-sentinel',
+    active: true,
+  },
+  {
     tag: 'Healthcare · AI',
     tagVariant: 'teal' as const,
     industry: 'Health Data Intelligence',
