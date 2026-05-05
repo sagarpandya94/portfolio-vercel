@@ -1,10 +1,10 @@
 export const siteConfig = {
   name: 'Sagar Pandya',
   initials: 'SP',
-  role: 'Software Quality Engineer',
-  tagline: 'SDET who builds AI agents, not just tests them.',
+  role: 'Senior Software Development Engineer in Test',
+  tagline: 'Engineer who builds AI agents, not just tests them.',
   description:
-    'Quality engineering for SaaS products where system reliability, data integrity, and compliance carry real weight. 4+ years building AI-integrated test systems across data, identity, and health domains — from pipeline validation to LLM quality to mobile automation.',
+    'Quality engineering for SaaS products where system reliability, data integrity, and compliance carry real weight. 5 years building integrated test systems across data, identity, and health domains — from pipeline validation to LLM quality to mobile automation.',
   contact: {
     email: 'sagarpandya94@gmail.com',
     github: 'https://github.com/sagarpandya94',
