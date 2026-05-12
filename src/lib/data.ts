@@ -194,7 +194,7 @@ export const experience = [
     company: 'Saviynt',
     period: 'Jul 2024 — Present',
     industryTag: 'Identity Security',
-    role: 'Software Quality Engineer 3',
+    role: 'Sr SDET',
     description:
       'PAM team. Leading QE for JIT access feature across 25.Amsterdam & 25.Chicago releases. 90% automation coverage across API and UI layers. CI/CD shift-left strategy, customer escalation support, and cross-team onboarding enablement.',
   },
